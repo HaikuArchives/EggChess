@@ -11,11 +11,11 @@ OBJECTS = ./objects/sge_surface.o ./objects/sge_primitives.o ./objects/sge_tt_te
 MACHINE = $(shell uname -m)
 ifeq ($(MACHINE), BePC)
 	CPU = x86
-	CFLAGS = -O9 -I. -g -I/boot/develop/tools/gnupro/include/SDL -I/boot/develop/tools/gnupro/include -Wall -ffast-math
+	CFLAGS = -O9 -I. -g -I/boot/system/develop/headers/SDL -I/boot/develop/tools/gnupro/include -Wall -ffast-math $(shell sdl-config --cflags)
 	STRIP = strip ../eggchess.x86 --strip-all
 else
 	CPU = ppc
-	CFLAGS = -I. -g -I/boot/develop/tools/gnupro/include/SDL -I/boot/develop/tools/gnupro/include
+	CFLAGS = -I. -g -I/boot/system/develop/headers/SDL -I/boot/develop/tools/gnupro/include
 	STRIP = echo "Not on the PPC matey ;-)"
 endif
 #end hardware info...
