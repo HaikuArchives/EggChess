@@ -1,0 +1,25 @@
+Eggchess BeOS
+
+This is a quick port of Eggchess to BeOS.
+
+For info on gameplay etc, see the original Readme file (included).
+
+Ported in a few hours by Matt Emson (memsom@interalpha.co.uk)
+
+Notes:
+The initial port was made on the x86 platform, mainly because GCC lent itself best to ,aking the port successful. If it compiles under GCC, it will compile on the PPC platform with a little work. Otherwise it's a 'lost cause' (read, a lot of hacking before it compiles on the x86 platform, let alone ppc.)
+
+Hacks needed:
+On the ppc a few alterations to the source were needed. The SDL port for ppc seems to have no readily available development headers, so I hacked some together from the x86 installation. 
+NB.  because of this, the ppc will assume SDL is located in the same place as it is on the x86 polatform. I don't look for the configure file etc, didn't have time/inclanation to mess about with this, so everything is tailored to *my* own machines set-up. You may need to change a few paths etc.
+
+To comply with the GPL, full source is included. The Makefile will build either ppc or x86, and will work out which platform by itself.
+
+Last words:
+Feel free to contact me. I have no idea how good or bad the code base is, and will be making no changes to it myself. Contact the author with bugs that are obviously not related to BeOS.
+
+Hopefully this will not be the last game I port, so look out for more offerings ;-)
+
+
+
+
