@@ -1,14 +1,10 @@
-Egg Chess v1.1 (010910) by Anders Lindström
-============================================
+# Egg Chess v1.1 (010910) by Anders Lindström
 
-1. Intro
-
-This is free software (GNU GPL), read COPYING for details.
+![EggChess screenshot](EggChess.png "EggChess")
 
 This is a very simple game called Egg Chess (or in swedish: Äggaschack).
 
-
-1.1 Rules
+### Rules
 
 Player 1 places an egg - whole, half eaten or empty - in one of the nine 
 nests. Next, player 2 can place a new egg (or part thereof), eat a part
@@ -18,7 +14,7 @@ The winner is the player who gets three whole, half eaten or empty eggs in
 a row.
 
 
-2. Installation
+### Installation
 
 First you need SDL from http://www.libsdl.org/ (v1.2+). After
 installing SDL, don't forget to check that the dynamic linker can find it 
@@ -30,10 +26,8 @@ but a version of SGE is included with the game.
 Just do 'make' to compile the game. The binary (eggchess) can be placed 
 anywhere as long as the directory gfx/ is in the same place.
 
-Egg chess supports cross compiling from Linux to Win32.
+### Credits
 
-
-3. Credits
 The rules of the game is invented by Stefan Sandstrom. Some of the graphics
 are borrowed from the Mac game "MacÄggaschack".
 
